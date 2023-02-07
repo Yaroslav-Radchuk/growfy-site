@@ -1,0 +1,31 @@
+.menu {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 3px;
+    column-gap: 35px;
+    justify-content: flex-end;
+
+    @media (max-width: 991.98px) {
+      column-gap: 25px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 1.62;
+    color: #fff;
+    text-decoration: none;
+    transition: border-color 0.3s ease 0s;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-color: #fff;
+    }
+  }
+}
+
+.menu-open .menu__body,
+.menu-open .menu__body::before {
+  left: 0;
+}

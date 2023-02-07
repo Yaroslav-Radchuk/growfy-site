@@ -1,0 +1,38 @@
+.cart-header {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.55;
+    text-decoration: none;
+    transition: border-color 0.3s ease 0s;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-color: #fff;
+    }
+
+    @media (max-width: 560px) {
+      display: none;
+    }
+  }
+
+  &__quantity {
+    background-color: rgba(129, 129, 139, 0.3);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.icon-menu {
+  display: none;
+}
